@@ -1,0 +1,7 @@
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let safety of safetyInformation" cdkDrag>
+    <span>{{ safety.ordinal }}</span>
+    <span>{{ safety.name }}</span>
+  </div>
+</div>
+<button (click)="onClick()">Вывести в лог</button>
